@@ -107,7 +107,7 @@ public class SabrixClientData {
 						                	   flag=false;
 						                   } else if(startElement.getName().getLocalPart().equals("EFFECTIVE_TAX_RATE")){
 						                	   xmlEvent = xmlEventReader.nextEvent();
-						                	   EFFECTIVE_TAX_RATE=xmlEvent.toString()+";"+" ";
+						                	   EFFECTIVE_TAX_RATE=xmlEvent.toString()+" ";
 						                   }
 						                   else if(startElement.getName().getLocalPart().equals("AUTHORITY_NAME")){
 						                	   xmlEvent = xmlEventReader.nextEvent();
@@ -121,7 +121,7 @@ public class SabrixClientData {
 						                   }
 						                   else if(startElement.getName().getLocalPart().equals("JURISDICTION_TEXT")){
 						                	   xmlEvent = xmlEventReader.nextEvent();
-						                	   JURISDICTION_TEXT="JURISDICTION_TEXT:"+xmlEvent.toString()+";"+" ";
+						                	   JURISDICTION_TEXT="AUTHORITY_MESSAGE:"+xmlEvent.toString()+";"+" ";
 						                	   Message=Message+JURISDICTION_TEXT;
 						                   }
 			
